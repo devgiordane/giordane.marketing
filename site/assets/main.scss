@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@200;400;700&family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+$gray: #111827;
+$blue: #03a8f3;
+body {
+  background: $gray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 100vh;
+  font-weight: 700;
+  &.btn-dark {
+    background: $gray;
+  }
+  &.btn-light {
+    background: $blue;
+  }
+  &.btn-white {
+    background: white;
+    color: $gray;
+  }
+  &.btn-full {
+    width: 100%;
+  }
+}
