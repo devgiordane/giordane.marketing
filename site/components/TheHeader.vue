@@ -10,7 +10,12 @@
       <p>Eu vou te ajudar a melhorar sua presença no mundo digital!</p>
     </div>
     <div class="center">
-      <a class="btn btn-dark" href="#">Agendar um contato</a>
+      <a
+        class="btn btn-dark"
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=558893839112&text=Ol%C3%A1,%20vim%20do%20seu%20site,%20e%20quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20*social%20media*"
+        >Agendar um contato</a
+      >
     </div>
   </div>
 </template>

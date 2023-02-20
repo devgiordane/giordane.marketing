@@ -1,10 +1,11 @@
 <template>
   <div>
     <TheHeader />
-    <Cards />
+    <!-- <Cards /> -->
     <Perfil />
     <Design />
     <Planos />
+    <Footer />
   </div>
 </template>
 

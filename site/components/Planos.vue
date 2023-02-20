@@ -1,9 +1,9 @@
 <template>
-  <div class="planos" id="design">
-    <h2 class="plan-title">Confira os planos</h2>
+  <div class="planos">
+    <h2 class="plan-title">Escolha um dos planos de social media</h2>
     <div class="plano">
       <h2 class="bg2">First Impression</h2>
-      <h3>R$ 259,00/mês</h3>
+      <h3><span>R$</span>259<span>/mês</span></h3>
       <div class="body">
         <div class="features">
           <div class="feature"><p>Posts no Feed</p></div>
@@ -23,12 +23,12 @@
         </div>
       </div>
       <div class="btnspace">
-        <a href="#" class="linkbtn">Quero saber mais</a>
+        <a href="#" class="btn btn-dark">Quero saber mais</a>
       </div>
     </div>
-    <div class="plano">
-      <h2 class="bg1">Brand Booster</h2>
-      <h3>R$ 399,00/mês</h3>
+    <div class="plano bg1">
+      <h2 class="">Brand Booster</h2>
+      <h3><span>R$</span>399<span>/mês</span></h3>
       <div class="body">
         <div class="features">
           <div class="feature"><p>Posts no Feed</p></div>
@@ -49,12 +49,12 @@
         </div>
       </div>
       <div class="btnspace">
-        <a href="#" class="linkbtn">Quero saber mais</a>
+        <a href="#" class="btn btn-light">Quero saber mais</a>
       </div>
     </div>
-    <div class="plano">
-      <h2 class="bg3">Made on demand</h2>
-      <h3>{{ customPreco }}/mês</h3>
+    <div class="plano bg2">
+      <h2 class="">Made on demand</h2>
+      <h3><span>R$</span>{{ customPreco }}<span>/mês</span></h3>
       <p class="subtitle">
         Costumize seu plano conforme a necessidade do seu empreendimento.
       </p>
@@ -71,21 +71,24 @@
         <div class="values">
           <div class="value">
             <button
-              @click="qtd.posts > 0 ? qtd.posts-- : qtd.posts"
-              class="btn"
+              @click="
+                qtd.posts;
+                0 ? qtd.posts-- : qtd.posts;
+              "
+              class="btn-increase"
             >
               -</button
             ><span class="field">{{ qtd.posts }}</span
-            ><button @click="qtd.posts++" class="btn">+</button>
+            ><button @click="qtd.posts++" class="btn-increase">+</button>
           </div>
           <div class="value">
             <button
               @click="qtd.stories > 0 ? qtd.stories-- : qtd.stories"
-              class="btn"
+              class="btn-increase"
             >
               -</button
             ><span class="field">{{ qtd.stories }}</span
-            ><button @click="qtd.stories++" class="btn">+</button>
+            ><button @click="qtd.stories++" class="btn-increase">+</button>
           </div>
 
           <div class="value">
@@ -114,7 +117,7 @@
         </div>
       </div>
       <div class="btnspace">
-        <a href="#" class="linkbtn">Quero saber mais</a>
+        <a href="#" class="btn btn-dark">Quero saber mais</a>
       </div>
     </div>
   </div>
@@ -156,10 +159,7 @@ export default {
       if (qtd.cardbio) {
         preco += 30;
       }
-      return preco.toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL",
-      });
+      return preco;
     },
   },
 };
@@ -167,43 +167,37 @@ export default {
 
 <style lang="scss">
 .planos {
-  h2 {
-    font-size: 40px;
-    color: #f6f6f6;
+  background: white;
+  .plan-title {
+    font-size: 25px;
     text-align: center;
-    padding: 30px 0;
+    padding: 2rem 0;
   }
   padding: 10px;
   .plano {
     border-radius: 10px;
-    background: white;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 3rem;
+    padding: 3rem 1rem;
     h2 {
-      font-size: 50px;
+      font-size: 35px;
       text-align: center;
-      color: #f6f6f6;
-      background-color: #32186f;
-      padding: 5px;
-      border-radius: 10px;
-      &.bg1 {
-        background-image: url("./assets/bg-05.jpg");
-        background-size: cover;
-      }
-      &.bg2 {
-        background-image: url("./assets/bg-06.jpg");
-        background-size: cover;
-      }
-      &.bg3 {
-        background-image: url("./assets/bg-07.jpg");
-        background-size: cover;
-      }
+    }
+    &.bg1 {
+      background: #dbeafe;
+    }
+    &.bg2 {
+      background: #f3f4f6;
     }
     h3 {
+      font-size: 30px;
       text-align: center;
-      padding: 30px 0;
-      font-weight: 400;
+      padding: 10px 0;
+      span {
+        font-weight: 400;
+        font-size: 15px;
+      }
     }
+
     .body {
       display: flex;
       .features {
@@ -226,8 +220,9 @@ export default {
           align-items: center;
           min-height: 40px;
           padding-left: 10px;
-          .btn {
-            background: #dfdfdf;
+
+          .btn-increase {
+            background: white;
             border: none;
             padding: 0px 15px;
             border-radius: 3px;
@@ -243,14 +238,6 @@ export default {
     .btnspace {
       padding: 20px 0;
       text-align: center;
-      .linkbtn {
-        padding: 10px;
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        background: #25d366;
-        border-radius: 5px;
-      }
     }
   }
 }

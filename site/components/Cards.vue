@@ -32,6 +32,7 @@
 <style lang="scss">
 .cards {
   padding: 5rem 1rem;
+
   .card {
     .el-1 {
       position: absolute;
