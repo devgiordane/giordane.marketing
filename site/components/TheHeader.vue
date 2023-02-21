@@ -7,7 +7,10 @@
       <h3>
         Redes sociais e design para <span>{{ nicho }}</span>
       </h3>
-      <p>Eu vou te ajudar a melhorar sua presença no mundo digital!</p>
+      <p>
+        Estou comprometido em ajudar o seu negócio a alcançar o sucesso online.
+        Vamos trabalhar juntos para melhorar a sua presença digital!
+      </p>
     </div>
     <div class="center">
       <a

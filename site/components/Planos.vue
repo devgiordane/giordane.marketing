@@ -136,6 +136,8 @@
 </template>
 
 <script lang="ts">
+import { parseURL } from "ufo";
+
 export default {
   data: function () {
     return {
@@ -177,25 +179,25 @@ export default {
       let m = ``;
       let qtd = this.qtd;
       if (qtd.posts > 0) {
-        m += `\n ✅ Com ${qtd.posts}  posts`;
+        m += `\n\n ✅ Com ${qtd.posts}  posts`;
       }
 
       if (qtd.stories > 0) {
-        m += `\n ✅ Com ${qtd.posts}  stories`;
+        m += `\n\n ✅ Com ${qtd.posts}  stories`;
       }
 
       if (qtd.agendamento) {
-        m += `\n ✅ Agendamento de posts`;
+        m += `\n\n ✅ Agendamento de posts`;
       }
 
       if (qtd.conteudo) {
-        m += `\n ✅ Elaboração de conteúdo!`;
+        m += `\n\n ✅ Elaboração de conteúdo!`;
       }
 
       if (qtd.cardbio) {
-        m += `\n ✅ Link personalizado para minha bio!`;
+        m += `\n\n ✅ Link personalizado para minha bio!`;
       }
-      return m;
+      return parseURL(m);
     },
   },
 };
@@ -214,6 +216,9 @@ export default {
     border-radius: 10px;
     margin-bottom: 3rem;
     padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
       font-size: 35px;
       text-align: center;
@@ -275,6 +280,9 @@ export default {
       padding: 20px 0;
       text-align: center;
     }
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 5rem 10rem;
   }
 }
 </style>

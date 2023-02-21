@@ -29,8 +29,18 @@
   .left {
     min-width: 25vw;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-image: url("@/assets/giordane.jpg");
+  }
+  @media only screen and (min-width: 1200px) {
+    .left {
+      min-width: 15vw;
+      background-image: url("@/assets/giordane2.jpg");
+    }
+    .text {
+      background-position: center;
+      min-height: 400px;
+    }
   }
   background: #f6f6f6;
   h3 {

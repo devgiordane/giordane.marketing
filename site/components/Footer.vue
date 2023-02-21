@@ -20,8 +20,9 @@
       >
         <img src="@/assets/whatsapp.png" alt="" />
       </a>
-      <a href="https://www.youtube.com/@giordanemarketing"></a>
-      <img src="@/assets/youtube.png" alt="" />
+      <a href="https://www.youtube.com/@giordanemarketing">
+        <img src="@/assets/youtube.png" alt="" />
+      </a>
     </div>
     <div class="text">
       <p class="small">

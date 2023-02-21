@@ -21,54 +21,40 @@
       <div class="topico">
         <h4>Elaboração do contéudo</h4>
         <p>
-          Elaboramos conteúdos relevantes para o seu negócio que ajudarão
-          aumentar o engajamento e alcance da sua marca nas redes sociais.
-          <br /><br />
-          Com base nas necessidades e interesses do seu público-alvo, eu vou
-          criar <b> conteúdo que seja relevante e de valor</b> para eles.
-          <br /><br />
-          Além disso, vou medir os resultados da sua estratégia de conteúdo para
-          ajustá-la sempre que necessário.
+          Elaboramos conteúdos relevantes para o seu negócio que ajudarão a
+          aumentar o engajamento e o alcance da sua marca nas redes sociais. Com
+          base nas necessidades e interesses do seu público-alvo, criaremos
+          conteúdo que seja valioso e relevante para eles. <br /><br />
+          Ademais, mediremos os resultados da sua estratégia de conteúdo para
+          ajustá-la sempre que necessário
         </p>
       </div>
       <div class="topico">
         <h4>Cronograma de postagens</h4>
         <p>
-          <b>
-            Segunda, quarta e sexta.
-            <br />
-            Terças e quintas.
-            <br />
-            Te quinta a domingo.
-          </b>
-
-          <br /><br />
-          Seu négocio é dinâmico e seu cronograma de postagens também precisa
-          ser !
-          <br /><br />
-          Escolha a quantidade de posts para cada mês e vamos juntos planejar as
-          estratégias para montar um cronograma e aproveitar as melhores datas
-          para promover além de conteúdo,
-          <b
-            >promoções, datas comemorativas eventos que façam sentido no seu
-            negócio.</b
-          >
-          <br /><br />Você escolhe o que postar e quando!
+          Segundas, quartas e sextas; terças e quintas; de quinta a domingo.
+          <br />
+          Seu negócio é dinâmico e seu cronograma de postagens também precisa
+          ser! Com o nosso serviço, você pode escolher a quantidade de posts que
+          deseja por mês e juntos planejaremos estratégias para montar um
+          cronograma que aproveite as melhores datas para promover não apenas
+          conteúdo, mas também promoções, eventos e datas comemorativas que
+          façam sentido para o seu negócio. <br />
+          Você escolhe o que postar e quando!
         </p>
       </div>
       <div class="topico">
         <h4>Agendamento de Posts</h4>
         <p>
           <i
-            >Postar todo dia no mesmo horário é difícil, mas ter consistencia é
-            importante! </i
+            >Postar todo dia no mesmo horário pode ser difícil, mas ter
+            consistência é fundamental para o sucesso nas redes sociais! </i
           ><br />
           <br />
-          organizar fotos, legendas, hastags, <b>deixe essa parte comigo</b> e
-          tenha mais tranquilidade na gestão do seu negócio.
-          <br />
-          <br />Basta aprovar o cronograma de postagens que os posts serão
-          programados no seu instagram e facebook.
+          Deixe a organização de fotos, legendas e hashtags comigo e tenha mais
+          tranquilidade na gestão do seu negócio. <br />
+          Basta aprovar o cronograma de postagens e os posts serão programados
+          no seu Instagram e Facebook.
         </p>
       </div>
 
@@ -76,21 +62,16 @@
         <h4>Stories</h4>
         <p>
           <i
-            >Os stories são a forma de engajar mais organicamente com seus
-            seguidores, o conteúdo dos stories deve complementar o feed. </i
+            >Os stories são uma forma orgânica de engajar com seus seguidores, e
+            o conteúdo dos stories deve complementar o que é postado no feed.</i
           ><br />
-          <br />
-          Por isso os planos <b>First Impression</b> e
-          <b>Brand Booster</b> oferecem versões de story de
-          <b> 05 e 10</b> posts respectivamente, e você pode escolher quantos
-          quiser no plano <b>Made on demand</b>.
-          <br />
-          <br /><b>O que são as versões de story?</b> <br />
-          As versão de story vão complementar seu post do feed com o foco em
-          engajamento.
-          <br />
-          Vamos fazer <b>enquentes, abrir caixas de perguntas</b>, e entregar
-          algo a mais sobre o conteudo do feed, de uma forma rapida e dinâmica.
+          Por isso, os nossos planos First Impression e Brand Booster oferecem
+          <b>04 storys</b>, e no plano Made on Demand você pode escolher quantos
+          quiser. <br /><br />
+          <b> Mas o que são essas versões de stories? </b><br />
+          Elas complementam o post do feed com o foco em engajamento. Vamos
+          fazer enquetes, abrir caixas de perguntas e entregar algo a mais sobre
+          o conteúdo do feed, de forma rápida e dinâmica.
         </p>
       </div>
     </div>
@@ -143,6 +124,7 @@
       margin-left: 10px;
     }
   }
+
   color: white;
   background: #3571d4;
   .clientes {
@@ -176,6 +158,20 @@
       border-radius: 1rem;
       background: rgb(103, 58, 182);
       background: linear-gradient(45deg, #4782e1 0%, #3571d4 60%);
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .carrossel {
+      img {
+        height: 400px;
+      }
+    }
+    .clientes {
+      padding: 3rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 10px 10px;
+      grid-template-areas: ". . .";
     }
   }
 }
