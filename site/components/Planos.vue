@@ -4,6 +4,11 @@
     <div class="plano">
       <h2 class="bg2">First Impression</h2>
       <h3><span>R$</span>237<span>/mês</span></h3>
+      <p class="subtitle">
+        A primeira impressão é a que fica, e eu quero te ajudar a ter um perfil
+        rico em conteúdo de qualidade para apresentar ao público os valores,
+        diferenciais e vantagens da sua marca, produto ou serviço.
+      </p>
       <div class="body">
         <div class="features">
           <div class="feature"><p>Posts no Feed</p></div>
@@ -34,6 +39,11 @@
     <div class="plano bg1">
       <h2 class="">Brand Booster</h2>
       <h3><span>R$</span>397<span>/mês</span></h3>
+      <p class="subtitle">
+        Ideal para você que está querendo consilidar sua marcar e gerar
+        autoridade, com 25 posts por mês vamos ter uma grande frequência de
+        conteudo no seu feed, para fixar bem sua marca para seu seguidores.
+      </p>
       <div class="body">
         <div class="features">
           <div class="feature"><p>Posts no Feed</p></div>
@@ -66,7 +76,8 @@
       <h2 class="">Made on demand</h2>
       <h3><span>R$</span>{{ customPreco }}<span>/mês</span></h3>
       <p class="subtitle">
-        Costumize seu plano conforme a necessidade do seu empreendimento.
+        Costumize seu plano conforme a necessidade, toda a liberdade que você
+        precisa para escolher melhor atende sua necessidades.
       </p>
       <div class="body">
         <div class="features">
@@ -127,7 +138,7 @@
         <a
           target="_blank"
           :href="`https://api.whatsapp.com/send/?phone=558893839112&text=Ol%C3%A1,%20vim%20do%20seu%20site,%20e%20quero%20saber%20mais%20sobre%20o%20plano%20*Made%20on%20demand*!\n\n\ ${msg}`"
-          class="btn btn-dark"
+          class="btn btn-light"
           >Quero saber mais</a
         >
       </div>
@@ -176,7 +187,7 @@ export default {
       return preco;
     },
     msg: function () {
-      let m = ``;
+      let m = "";
       let qtd = this.qtd;
       if (qtd.posts > 0) {
         m += `\n\n ✅ Com ${qtd.posts}  posts`;
@@ -197,7 +208,7 @@ export default {
       if (qtd.cardbio) {
         m += `\n\n ✅ Link personalizado para minha bio!`;
       }
-      return parseURL(m);
+      return encodeURI(m);
     },
   },
 };
@@ -237,6 +248,9 @@ export default {
         font-weight: 400;
         font-size: 15px;
       }
+    }
+    .subtitle {
+      text-align: center;
     }
 
     .body {
