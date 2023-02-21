@@ -23,7 +23,12 @@
         </div>
       </div>
       <div class="btnspace">
-        <a href="#" class="btn btn-dark">Quero saber mais</a>
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=558893839112&text=Ol%C3%A1,%20vim%20do%20seu%20site,%20e%20quero%20saber%20mais%20sobre%20o%20plano%20*First%20Impression*!"
+          class="btn btn-dark"
+          >Quero saber mais</a
+        >
       </div>
     </div>
     <div class="plano bg1">
@@ -49,7 +54,12 @@
         </div>
       </div>
       <div class="btnspace">
-        <a href="#" class="btn btn-light">Quero saber mais</a>
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=558893839112&text=Ol%C3%A1,%20vim%20do%20seu%20site,%20e%20quero%20saber%20mais%20sobre%20o%20plano%20*Brand%20Booster*!"
+          class="btn btn-light"
+          >Quero saber mais</a
+        >
       </div>
     </div>
     <div class="plano bg2">
@@ -114,7 +124,12 @@
         </div>
       </div>
       <div class="btnspace">
-        <a href="#" class="btn btn-dark">Quero saber mais</a>
+        <a
+          target="_blank"
+          :href="`https://api.whatsapp.com/send/?phone=558893839112&text=Ol%C3%A1,%20vim%20do%20seu%20site,%20e%20quero%20saber%20mais%20sobre%20o%20plano%20*Made%20on%20demand*!\n\n\ ${msg}`"
+          class="btn btn-dark"
+          >Quero saber mais</a
+        >
       </div>
     </div>
   </div>
@@ -157,6 +172,30 @@ export default {
         preco += 30;
       }
       return preco;
+    },
+    msg: function () {
+      let m = ``;
+      let qtd = this.qtd;
+      if (qtd.posts > 0) {
+        m += `\n ✅ Com ${qtd.posts}  posts`;
+      }
+
+      if (qtd.stories > 0) {
+        m += `\n ✅ Com ${qtd.posts}  stories`;
+      }
+
+      if (qtd.agendamento) {
+        m += `\n ✅ Agendamento de posts`;
+      }
+
+      if (qtd.conteudo) {
+        m += `\n ✅ Elaboração de conteúdo!`;
+      }
+
+      if (qtd.cardbio) {
+        m += `\n ✅ Link personalizado para minha bio!`;
+      }
+      return m;
     },
   },
 };
