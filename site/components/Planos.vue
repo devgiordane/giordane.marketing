@@ -3,7 +3,7 @@
     <h2 class="plan-title">Escolha um dos planos de social media</h2>
     <div class="plano">
       <h2 class="bg2">First Impression</h2>
-      <h3><span>R$</span>259<span>/mês</span></h3>
+      <h3><span>R$</span>237<span>/mês</span></h3>
       <div class="body">
         <div class="features">
           <div class="feature"><p>Posts no Feed</p></div>
@@ -14,8 +14,8 @@
           <div class="feature"><p>Suporte</p></div>
         </div>
         <div class="values">
-          <div class="value"><p>12 por mês</p></div>
-          <div class="value"><p>05 por mês</p></div>
+          <div class="value"><p>15 por mês</p></div>
+          <div class="value"><p>04 por mês</p></div>
           <div class="value"><p>Sim</p></div>
           <div class="value"><p>Sim</p></div>
           <div class="value"><p>Não incluso</p></div>
@@ -28,7 +28,7 @@
     </div>
     <div class="plano bg1">
       <h2 class="">Brand Booster</h2>
-      <h3><span>R$</span>399<span>/mês</span></h3>
+      <h3><span>R$</span>397<span>/mês</span></h3>
       <div class="body">
         <div class="features">
           <div class="feature"><p>Posts no Feed</p></div>
@@ -40,8 +40,8 @@
           <div class="feature"><p>Suporte</p></div>
         </div>
         <div class="values">
-          <div class="value"><p>17 por mês</p></div>
-          <div class="value"><p>10 por mês</p></div>
+          <div class="value"><p>25 por mês</p></div>
+          <div class="value"><p>04 por mês</p></div>
           <div class="value"><p>Sim</p></div>
           <div class="value"><p>Sim</p></div>
           <div class="value"><p>Sim</p></div>
@@ -71,10 +71,7 @@
         <div class="values">
           <div class="value">
             <button
-              @click="
-                qtd.posts;
-                0 ? qtd.posts-- : qtd.posts;
-              "
+              @click="qtd.posts > 0 ? qtd.posts-- : qtd.posts"
               class="btn-increase"
             >
               -</button
@@ -141,11 +138,11 @@ export default {
       let preco = 0;
       let qtd = this.qtd;
       if (qtd.posts) {
-        preco += qtd.posts * 12;
+        preco += qtd.posts * 10;
       }
 
       if (qtd.stories) {
-        preco += qtd.stories * 5;
+        preco += qtd.stories * 3;
       }
 
       if (qtd.agendamento) {
@@ -153,7 +150,7 @@ export default {
       }
 
       if (qtd.conteudo) {
-        preco += qtd.posts * 5;
+        preco += qtd.posts * 3;
       }
 
       if (qtd.cardbio) {
