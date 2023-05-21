@@ -15,24 +15,30 @@
       <img src="@/assets/posts/post8.jpg" alt="" />
       <img src="@/assets/posts/post9.jpg" alt="" />
       <img src="@/assets/posts/post10.jpg" alt="" />
+      <img src="@/assets/posts/post11.jpg" alt="" />
+      <img src="@/assets/posts/post12.jpg" alt="" />
     </div>
 
     <div class="topicos">
       <div class="topico">
         <h4>Elaboração do contéudo</h4>
         <p>
-          Elaboramos conteúdos relevantes para o seu negócio que ajudarão a
-          aumentar o engajamento e o alcance da sua marca nas redes sociais. Com
-          base nas necessidades e interesses do seu público-alvo, criaremos
-          conteúdo que seja valioso e relevante para eles. <br /><br />
-          Ademais, mediremos os resultados da sua estratégia de conteúdo para
-          ajustá-la sempre que necessário
+          Conteúdos relevantes para o seu negócio que ajudarão a aumentar o
+          engajamento e o alcance da sua marca nas redes sociais. <br />
+          Com base nas necessidades e interesses do seu público-alvo, eu vou
+          criar um conteúdo que seja valioso e relevante para eles. <br /><br />
+          Vamos medir os resultados da sua estratégia de conteúdo para ajustá-la
+          sempre que necessário
         </p>
       </div>
       <div class="topico">
         <h4>Cronograma de postagens</h4>
         <p>
-          Segundas, quartas e sextas; terças e quintas; de quinta a domingo.
+          <b>
+            Segundas, quartas e sextas; terças e quintas; de quinta a
+            domingo.</b
+          >
+          <br />
           <br />
           Seu negócio é dinâmico e seu cronograma de postagens também precisa
           ser! Com o nosso serviço, você pode escolher a quantidade de posts que
@@ -59,18 +65,40 @@
       </div>
 
       <div class="topico">
+        <h4>Reels</h4>
+        <p>
+          <i>Tenha mais alcance e gere autoridade com seu conteúdo</i>
+          <br />
+          <br />
+          <b>
+            Os vídeos curtos são a principal fonte de conteúdo que as pessoas
+            buscam nas redes sociais, e ficar fora dessa tendência é limitar seu
+            potêncial
+          </b>
+          <br />
+          <br />
+          O planos First Impression e Brand Booster oferecem
+          <b>04 reels</b>, e no plano Made on Demand você pode escolher quantos
+          quiser. <br /><br />
+        </p>
+      </div>
+      <div class="topico">
         <h4>Stories</h4>
         <p>
           <i
             >Os stories são uma forma orgânica de engajar com seus seguidores, e
             o conteúdo dos stories deve complementar o que é postado no feed.</i
-          ><br />
+          >
+          <br />
+          <br />
           Por isso, os nossos planos First Impression e Brand Booster oferecem
-          <b>04 storys</b>, e no plano Made on Demand você pode escolher quantos
+          <b>07 storys</b>, e no plano Made on Demand você pode escolher quantos
           quiser. <br /><br />
-          <b> Mas o que são essas versões de stories? </b><br />
-          Elas complementam o post do feed com o foco em engajamento. Vamos
-          fazer enquetes, abrir caixas de perguntas e entregar algo a mais sobre
+          <b> Mas o que são essas versões de stories? </b>
+          <br />
+          <br />
+          Elas complementam o post do feed com o foco em engajamento. <br />
+          Vamos fazer enquetes, caixas de perguntas e entregar algo a mais sobre
           o conteúdo do feed, de forma rápida e dinâmica.
         </p>
       </div>
@@ -126,7 +154,7 @@
   }
 
   color: white;
-  background: #3571d4;
+  background: #2f2f2f;
   .clientes {
     padding: 2rem;
     display: grid;
@@ -157,7 +185,7 @@
       margin-bottom: 2rem;
       border-radius: 1rem;
       background: rgb(103, 58, 182);
-      background: linear-gradient(45deg, #4782e1 0%, #3571d4 60%);
+      background: linear-gradient(17deg, #444444 0%, #2f2f2f 40%);
     }
   }
   @media only screen and (min-width: 1200px) {

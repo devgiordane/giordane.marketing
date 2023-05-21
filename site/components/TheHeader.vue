@@ -4,13 +4,8 @@
       <img class="logo" src="@/assets/logo-branca.svg" />
     </div>
     <div class="text">
-      <h3>
-        Redes sociais e design para <span>{{ nicho }}</span>
-      </h3>
-      <p>
-        Estou comprometido em ajudar o seu negócio a alcançar o sucesso online.
-        Vamos trabalhar juntos para melhorar a sua presença digital!
-      </p>
+      <h3>Redes sociais e design para estética</h3>
+      <p>Vamos impulsionar sua clínica ou consultório para o sucesso online!</p>
     </div>
     <div class="center">
       <a
@@ -22,51 +17,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-export default {
-  data: function () {
-    return {
-      nicho: "Esteticistas",
-      nichos: [
-        "Academia",
-        "Arquiteto",
-        "Barbearia",
-        "Boutique",
-        "Cafeteria",
-        "Contador",
-        "Corretor",
-        "Creche",
-        "Delivery",
-        "Doceria",
-        "E-commerce",
-        "Estética",
-        "Eventos",
-        "Farmácia",
-        "Hamburgueria",
-        "Hotel",
-        "Lava-rápido",
-        "Médico",
-        "Nutricionista",
-        "Odontologia",
-        "Oficina",
-        "Papelaria",
-        "Pet shop",
-        "Pizzaria",
-        "Psicólogo",
-        "Restaurante",
-        "Supermercado",
-      ],
-    };
-  },
-  mounted() {
-    setInterval(() => {
-      const index = Math.floor(Math.random() * this.nichos.length);
-      this.nicho = this.nichos[index];
-    }, 3000);
-  },
-};
-</script>
 
 <style lang="scss" scoped>
 .logo {
